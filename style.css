@@ -43,6 +43,10 @@ img {
   max-width: 500px;
 }
 
+img:hover, a:hover, input:hover, button:hover {
+  outline: red solid 3px;
+}
+
   
 #light-box {
     position: fixed;
