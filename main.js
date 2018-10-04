@@ -12,7 +12,7 @@ function searchParam(searchTerm, callback) {
 function displayResults(data) {
     const results = data.items.map((item, index) => {
         return `
-        <div class="results">
+        <div class="results" aria-live="assertive">
         <h3 class="resultHeader">${item.snippet.title}</h3>
         <p class="resultHeader">More from <a href="http://www.youtube.com/channel/${item.snippet.channelId}" target="_blank">${item.snippet.channelTitle}</a>
         </p>
